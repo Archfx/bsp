@@ -34,17 +34,6 @@ You can use `--dirty` to build without resetting the source tree. This will allo
 ./bsp --dirty linux latest
 ```
 
-~~~admonish note
-
-Currently `--dirty` is broken for `linux`. You can use following arguments to
-allow `bsp` to rebuild `.config` to workaround this issue:
-
-```bash
-./bsp --no-prepare-source --no-container-update linux latest
-```
-
-~~~
-
 ## Install build artifacts
 
 You can use `./bsp install` to install the built package to a root partition (like a microSD card):
